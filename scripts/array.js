@@ -37,3 +37,22 @@ var lastIndex = arr1.lastIndexOf(3)
 var concatedArr = arr1.concat(arr3);
 //console.log(concatedArr);
 
+//Slice method, working with the copy
+var arrSlice = [2, 5, 17, 48, 69, "one", "two", "three"];
+var sliced = arrSlice.slice(3,6);//heracnum e nshvats hatvac@ [start, end)
+//console.log(sliced,"modyfied");
+//console.log(arrSlice, "original");
+var slicedMins = arrSlice.slice(2,-3);//start@ bacasakan chi karox linel
+var slicedMins1 = arrSlice.slice(-3);
+console.log(slicedMins);
+console.log(slicedMins1);
+
+
+//Splice method, working on the original
+var arrSplice = [2, 5, 17, 48, 69, "one", "two", "three"];
+//var spliced = arrSplice.splice(2,1);//heracnum e [start, cuantity]
+//console.log(arrSplice, "original");
+//console.log(spliced, "modyfied");
+var spliced1 = arrSplice.splice(0,1,"hello");
+//console.log(spliced1, "modyfied");
+
