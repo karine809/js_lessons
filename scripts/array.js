@@ -54,8 +54,8 @@ var slicedMins1 = arrSlice.slice(-3);//hasvark@ sksum e verjic
 
 var arrSplice = [2, 5, 17, 48, 69, "one", "two", "three"];
 var spliced = arrSplice.splice(4,2);//heracnum e [start, count]
-console.log(arrSplice, "original");
-console.log(spliced, "modyfied");
+// console.log(arrSplice, "original");
+// console.log(spliced, "modyfied");
 
 // var spliced1 = arrSplice.splice(5);//vercnum e 5-ic sksac minchev verj
 // console.log(arrSplice, "original");//originalum mnum e 5 hat element, originali hamar count e
@@ -65,3 +65,13 @@ console.log(spliced, "modyfied");
 // console.log(arrSplice, "original");
 // console.log(spliced2, "modyfied");
 
+
+//Sort method
+var arrSort = [4, 61, 28, 9, 17, "d", "w", "a", "k" ]
+var sorted = arrSort.sort();//sortavorum e tver@ @st tvanshanneri achman kargi, tarer@` @st aybbenakan
+//console.log(sorted);
+
+//Reverce method
+var arrReverce = [4, 61, 28, 9, 17, "a", "v", "t"];//hakadardz e sharum
+var reverced = arrReverce.reverse();
+console.log(reverced);
