@@ -67,11 +67,29 @@ var spliced = arrSplice.splice(4,2);//heracnum e [start, count]
 
 
 //Sort method
-var arrSort = [4, 61, 28, 9, 17, "d", "w", "a", "k" ]
+var arrSort = [44, 61, 28, 9, 17, "d", "w", "a", "k" ]
 var sorted = arrSort.sort();//sortavorum e tver@ @st tvanshanneri achman kargi, tarer@` @st aybbenakan
-//console.log(sorted);
+// sorted = arrSort.sort(function(a,b){return a-b}) //sortavorim e tver@ @st achman kargi
+// sorted = arrSort.sort(function(a,b){return b-a})// sortavorim e tver@ @st nvazman kargi
+// console.log(sorted);
+
+
 
 //Reverce method
-var arrReverce = [4, 61, 28, 9, 17, "a", "v", "t"];//hakadardz e sharum
+var arrReverce = [4, 61, 28, 9, 17, "a", "v", "t"];//hakadardz e sharum` verj@ araj e anum
 var reverced = arrReverce.reverse();
-console.log(reverced);
+//console.log(reverced);
+
+//Join method
+var arrJoin = [44, 28, 17, "d",  "a", "k" ];
+var joined = arrJoin.join();//veradardznum e array@ vorpes string, aranqner@ ','-ov
+// joined = arrJoin.join(' ');//aranqner@ dnum e bacat 
+// joined = arrJoin.join('/');//aranqner@ dnum e '/'
+//console.log(joined);
+
+//Reduce method
+var arrReduce = [40, 20, 10];
+var redused = arrReduce.reduce(function(total, num){return total-num});//arrayi arjeq@ nvazecnum e, dardznelov mek@
+//srtingi jamanak '-' chen anum, Nan e talis, katarum en '+' vorn el concat e anum
+
+console.log(redused);
