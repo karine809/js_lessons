@@ -92,4 +92,31 @@ var arrReduce = [40, 20, 10];
 var redused = arrReduce.reduce(function(total, num){return total-num});//arrayi arjeq@ nvazecnum e, dardznelov mek@
 //srtingi jamanak '-' chen anum, Nan e talis, katarum en '+' vorn el concat e anum
 
-console.log(redused);
+//console.log(redused);
+
+
+
+// array with object
+var arrObj = [3, 56, 81, 27,
+   obj = {
+    fullName: {              
+      firstName: 'Karine',
+      lastName: 'Mesropyan'
+    },
+    age: 30,
+    gender: 'female',
+    hobbies: ['reading','cooking','drawing'] 
+}];
+//console.log(arrObj);
+
+//find method
+//var foundEl = arrObj.find(element => element > 60);
+// var foundEl = arrObj.find((arrObject index, array) =>{
+//     return arrObj.gender === 'male'
+// });
+//console.log(foundEl);
+
+var foundIndex = arrObj.findIndex((arrObject, index, arrays) => {
+  return arrObj.age === 30
+});
+console.log(foundIndex);
