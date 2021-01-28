@@ -110,13 +110,13 @@ var arrObj = [3, 56, 81, 27,
 //console.log(arrObj);
 
 //find method
-//var foundEl = arrObj.find(element => element > 60);
-// var foundEl = arrObj.find((arrObject index, array) =>{
-//     return arrObj.gender === 'male'
-// });
-//console.log(foundEl);
-
-var foundIndex = arrObj.findIndex((arrObject, index, arrays) => {
-  return arrObj.age === 30
+var foundEl = arrObj.find(element => element > 60);
+var foundEl = arrObj.find((arrObject, index, array) =>{
+    return arrObject.gender === 'female';
 });
-console.log(foundIndex);
+console.log(foundEl);
+
+// var foundIndex = arrObj.findIndex((arrObj, index, arrays) => {//sa sxal e ashxatum
+//   return arrObj.fullName;
+// });
+// console.log(foundIndex);

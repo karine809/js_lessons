@@ -13,7 +13,7 @@ var obj = {
 //delete(obj.age);
 
 
-// Objecti stexcmen tarberak SUPER GLOBAL objecti ornutyamb
+// Objecti stexcmen tarberak SUPER GLOBAL objecti ognutyamb
 var obj1 = new Object();
 obj1.content = 'Do Lessons';
 obj1.time = '18:00';

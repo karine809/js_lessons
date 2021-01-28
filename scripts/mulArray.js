@@ -10,10 +10,10 @@ arr.pop();
 arr.splice(4,0,["program lesson", 19])
  console.table(arr);
 // console.log(arr[4][0]);
-for (var i =0 ; i < arr.length; i++){
+for (var i =0 ; i < arr.length; i++){//sa drsi arrayi hamar
     //console.log(arr[i]);
     var innerArraylength = arr[i].length;
-    for(var j = 0; j < innerArraylength; j++){
+    for(var j = 0; j < innerArraylength; j++){//sa nersi arrayi hamar
         console.log('[' + i + ',' + j + ']= ' + arr[i][j]);
     }
 }
