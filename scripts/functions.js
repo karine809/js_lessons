@@ -4,7 +4,7 @@ function fName(a,b){//a, b argument
 }
 //fName(4,6);//parametr
 //console.log(fName(4,8));
-
+//---------------------------------------------------
 let a = 11; 
 let x = 10;
 //function expresstion
