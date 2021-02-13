@@ -51,3 +51,19 @@ Object.defineProperty(obj, "sum", {
 console.log(obj.sum);// 12
 obj.sum = 7;// ???
 console.log(obj);//4, 99
+
+
+// const user = {     
+//     get fullName() {        
+//        return this.firstName + ' ' + this.lastName;    
+//     },    
+//     set fullName (name) {        
+//         let words = name.toString().split(' ');        
+//         this.firstName = words[0] || '';        
+//         this.lastName = words[1] || '';    
+//      } 
+//  } 
+//  user.fullName = 'Hello World'; 
+//  console.log(user.firstName);
+//  console.log(user.lastName);
+
