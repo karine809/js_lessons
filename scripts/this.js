@@ -29,7 +29,7 @@ const obj2 = {
         console.log(this.name);
     }
 }
-//obj2.display();//undefined
+obj2.display();//undefined
 //-------------------------------------------
 const obj4 = {
     name: "Anna",
@@ -37,25 +37,25 @@ const obj4 = {
         console.log(this.name);  //ktpi Anabis
     }
 };
-// const otherObj4 = { name: "Anabis"};
-// otherObj4.sayHello = obj4.display;//veragrum e exel, func-i kanch chka
-// otherObj4.sayHello();//sayHellon displayi copyn e, anvanapoxutyun e exel
+const otherObj4 = { name: "Anabis"};
+otherObj4.sayHello = obj4.display;//veragrum e exel, func-i kanch chka
+otherObj4.sayHello();//sayHellon displayi copyn e, anvanapoxutyun e exel
 
 
-function Person(name, age, isWorking) {
-    // this = {}
-     this.name = name;
-     this.age = age;
-     this.isWorking = isWorking;
-     this.sayHello = function(){
-         //console.log("Hello " + " " + this.name);
-         console.log(this);//this@ mer objectnern e person1,person2
-     }
- }
- const person1 = new Person("Karien", 33, false); 
- const person2 = new Person("Kar", 30, true); 
+// function Person(name, age, isWorking) {
+//     // this = {}
+//      this.name = name;
+//      this.age = age;
+//      this.isWorking = isWorking;
+//      this.sayHello = function(){
+//          //console.log("Hello " + " " + this.name);
+//          console.log(this);//this@ mer objectnern e person1,person2
+//      }
+//  }
+//  const person1 = new Person("Karien", 33, false); 
+//  const person2 = new Person("Kar", 30, true); 
  
-//   console.log(person1);
-//   console.log(person2);
-person1.sayHello();
-person2.sayHello();
+// //   console.log(person1);
+// //   console.log(person2);
+// person1.sayHello();
+// person2.sayHello();
