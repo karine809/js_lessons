@@ -2,7 +2,8 @@ const button = document.querySelector('button');
 
 const getPosition = (args) => {
     const promise = new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(sucsses => {
+        navigator.geolocation.getCurrentPosition(
+             sucsses => {
            resolve(sucsses);//object e 
         }, error => {
             reject(error);
@@ -34,13 +35,13 @@ function trackUserLocation(){
     // }
     )
     .catch (error => {
-        console.log(error);
+        //console.log(error);
     })
-    .then(data =>{
-        console.log(data, posData);
+    .then(data => {
+       // console.log(data, posData);
     })
     .finally(() => {
-        console.log("All is Done!");//ankax nranic than / cath@ verjum sa e linum
+       // console.log("All is Done!");//ankax nranic than / cath@ verjum sa e linum
     })
     // navigator.geolocation.getCurrentPosition(
     //     (positionData) => {
@@ -66,9 +67,42 @@ function trackUserLocation(){
 
 button.addEventListener('click', trackUserLocation);
 
-// let result = 0;
-// for(let i = 0; i < 1000000; i++){
-//     result += i;
-// }
-// console.log(result);
+//Promise Methods
 
+Promise.race([getPosition(), setTimer(2000)]).then(data => {
+    console.log(data);
+});
+
+Promise.all([getPosition(), setTimer(2000)]).then(promiseData => {
+    console.log(promiseData);
+});
+
+Promise.allSettled([getPosition(), setTimer(2000)]).then(data => {
+    console.log(data);
+})
+getPosition();//erkusn el veradardznum en promise-ner
+setTimer();
+
+// Async/await
+
+// async function trackUserLocation(){
+//     let positionData;
+//     let timerData; 
+//     try {             //then-i pah@
+//         positionData =  await getPosition()
+//         timerData = await setTimer(2000);
+//     }
+//     catch (error) {    //error
+//         console.log(error);
+//     }
+//   console.log(positionData, timerData);
+// }
+
+// // const setTimer = await (duration) => {
+// //     const promise = new Promise((resolve, reject) => {
+// //         setTimeout(() => {
+// //             resolve("Done!");
+// //         }, duration);
+// //     });
+// //     return promise;
+// // }
